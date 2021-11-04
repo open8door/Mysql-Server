@@ -9,9 +9,17 @@ It implements the relational model and uses Structured Query Language (better kn
 ==== Edit Databases Mysql-Server ====
 
   # sudo mysql
-  # ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+  # SHOW VARIABLES LIKE 'validate_password';
+  # user mysql
+  # select user, plugin, host from mysql.user;
+  # ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password';
   # FLUSH PRIVILEGES;
   # exit
+  
+==== Run Mysql-Server ====
+
+  # mysql -u root -p
+  # select user, authentication_string, plugin, host FROM mysql.user;
   
 ====================================================================================================================================================================
 
