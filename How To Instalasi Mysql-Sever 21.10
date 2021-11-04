@@ -10,7 +10,7 @@ It implements the relational model and uses Structured Query Language (better kn
 
   # sudo mysql
   # SHOW VARIABLES LIKE 'validate_password';
-  # user mysql
+  # use mysql
   # select user, plugin, host from mysql.user;
   # ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password';
   # FLUSH PRIVILEGES;
