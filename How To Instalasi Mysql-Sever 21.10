@@ -3,7 +3,6 @@ It implements the relational model and uses Structured Query Language (better kn
 
 ==== Instalasi Mysql-Server ====
 
-  # sudo su
   # sudo apt update
   # sudo apt -y install mysql-server
   
